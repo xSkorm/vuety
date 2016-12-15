@@ -43,7 +43,7 @@ export const On = RegisterDecorator<string, EventDecorator & EventDecorator2>("O
         created(instance: Vue) {
             const {obj, evt} = processArgs(key, instance, args);
             // Add a handler for the event pointed to the handler method
-            obj.$on(evt, descriptor.value);
+            obj.$on(evt, descriptor.value.bind(instance));
         }
     });
 });
