@@ -1,5 +1,5 @@
 import * as Vue from "vue";
-import { Watch, Component, Data, Emit, Lifecycle, On, Prop, Render } from "src";
+import { Watch, Component, Data, Emit, Lifecycle, On, Prop, Render } from "../";
 
 @Component()
 class Child extends Vue {

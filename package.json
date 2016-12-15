@@ -5,15 +5,29 @@
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc"
+    "build": "tsc",
+    "prepublish": "tsc"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xSkorm/vuety.git"
+  },
+  "author": {
+    "name": "xSkorm"
+  },
   "license": "ISC",
   "dependencies": {
     "lodash": "^4.17.2",
+    "typescript": "^2.1.4",
     "vue": "^2.1.5"
   },
   "devDependencies": {
     "typings": "^2.0.0"
-  }
+  },
+  "files": [
+    "dist/index.js",
+    "dist/index.d.ts",
+    "dist/index.js.map",
+    "dist/src"
+  ]
 }
