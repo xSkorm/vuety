@@ -1,0 +1,19 @@
+{
+  "name": "vuety",
+  "version": "1.0.0",
+  "description": "Type-safe decorators for Vue",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.2",
+    "vue": "^2.1.5"
+  },
+  "devDependencies": {
+    "typings": "^2.0.0"
+  }
+}

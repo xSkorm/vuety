@@ -1,0 +1,30 @@
+{
+    "compilerOptions": {
+        "noImplicitAny": true,
+        "noImplicitThis": true,
+        "noImplicitReturns": true,
+        "noUnusedLocals": true,
+        "strictNullChecks": true,
+        "suppressImplicitAnyIndexErrors": true,
+        "stripInternal": true,
+        "traceResolution": true,
+        "baseUrl": "./",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "target": "es6",
+        "sourceMap": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "outDir": "dist",
+        "declaration": true
+    },
+    "exclude": [
+        "node_modules",
+        "dist"
+    ],
+    "include": [
+        "src",
+        "typings",
+        "index.ts"
+    ]
+}
