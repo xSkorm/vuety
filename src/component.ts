@@ -67,7 +67,6 @@ export function Component<TOptions extends Vue.ComponentOptions<Vue>>(options: T
         if (dataStore.length > 0) {
             options.data = function (this: Vue) {
                 const obj = {};
-                console.log(dataStore);
                 dataStore.forEach(ds => Object.assign(obj, ds.call(this)));
                 return obj;
             };
