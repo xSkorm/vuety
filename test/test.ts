@@ -51,12 +51,12 @@ class Test extends Vue {
         console.log("Lifecycle", "created");
     }
 
-    @Emit() protected loaded(message: string) {
-        console.log("Emitted", "loaded", message);
+    @Emit("e", v => v.$root) protected loaded(message: string) {
+        console.log("Emitted", "e", message);
     }
 
-    @On("loaded") protected onLoaded(message: string) {
-        console.log("On", "loaded", message);
+    @On("e", v => v.$root) protected onLoaded(message: string) {
+        console.log("On", "e", message);
     }
 }
 
