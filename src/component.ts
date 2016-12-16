@@ -84,7 +84,7 @@ export function Component<TOptions extends Vue.ComponentOptions<Vue>>(options: T
                 });
                 // If there was already a created method invoke it
                 if (old) {
-                    old();
+                    old.call(this);
                 }
             };
         }
