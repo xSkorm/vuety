@@ -1,8 +1,8 @@
 {
   "name": "vuety",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "Type-safe decorators for Vue",
-  "main": "dist/index.js",
+  "main": "./dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
@@ -16,18 +16,21 @@
     "name": "xSkorm"
   },
   "license": "ISC",
-  "dependencies": {
+  "peerDependencies": {
     "lodash": "^4.17.2",
-    "typescript": "^2.1.4",
     "vue": "^2.1.5"
   },
   "devDependencies": {
-    "typings": "^2.0.0"
+    "typescript": "^2.1.4",
+    "typings": "^2.0.0",
+    "lodash": "^4.17.2",
+    "vue": "^2.1.5"
   },
   "files": [
     "dist/index.js",
     "dist/index.d.ts",
     "dist/index.js.map",
     "dist/src"
-  ]
+  ],
+  "typings": "dist/index.d.ts"
 }
