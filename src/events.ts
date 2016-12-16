@@ -32,7 +32,7 @@ export const Emit = RegisterDecorator<string, EventDecorator & EventDecorator2>(
     descriptor.value = function (this: Vue) {
         const {obj, evt} = processArgs(key, this, args);
 
-        obj.$emit.apply(this, [evt, ...arguments]);
+        obj.$emit.apply(obj, [evt, ...arguments]);
         // Trigger the old method to have code that runs after each time the event is triggered
         old.apply(this, arguments);
     };
