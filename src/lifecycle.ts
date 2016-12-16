@@ -7,7 +7,7 @@ export type LifecycleNames =
     "beforeUpdate" | "updated" |
     "activated" | "deactivated"
 
-export declare type LifecycleDecorator = () => TypedMemberDecorator<LifecycleNames, () => void>;
+export declare type LifecycleDecorator = () => TypedMemberDecorator<LifecycleNames, () => any>;
 
 export const Lifecycle = RegisterDecorator<LifecycleNames, LifecycleDecorator>("Lifecycle", (target, key, descriptor, args, store, exclude) => {
     store({
