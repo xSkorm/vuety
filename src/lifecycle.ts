@@ -5,7 +5,7 @@ export type LifecycleNames =
     "beforeDestroy" | "destroyed" |
     "beforeMount" | "mounted" |
     "beforeUpdate" | "updated" |
-    "activated" | "deactivated"
+    "activated" | "deactivated";
 
 export declare type LifecycleDecorator = () => TypedMemberDecorator<LifecycleNames, () => any>;
 
